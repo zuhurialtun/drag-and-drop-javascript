@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and Drop Test</title>
+  <style>
+    .column {
+      width: 50%;
+      height: 500px;
+      float: left;
+    }
+
+    .table {
+      width: 100px;
+      height: 100px;
+      background-color: #808080;
+      color: white;
+      font-weight: 900;
+      text-align: center;
+      line-height: 100px;
+      margin: 10px;
+    }
+
+    .customer {
+      width: 100px;
+      height: 100px;
+      color: white;
+      font-weight: 900;
+      text-align: center;
+      line-height: 100px;
+      margin: 10px;
+      cursor: move;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .gray{
+        background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="column">
+    <div class="table gray" id="table1">Table 1</div>
+    <div class="table gray" id="table2">Table 2</div>
+    <div class="table gray" id="table3">Table 3</div>
+    <div class="table gray" id="table3">Table 4</div>
+    <div class="table gray" id="table3">Table 5</div>
+  </div>
+
+  <div class="column">
+    <div class="customer gray" draggable="true" id="customer1">Customer 1</div>
+    <div class="customer gray" draggable="true" id="customer2">Customer 2</div>
+    <div class="customer gray" draggable="true" id="customer3">Customer 3</div>
+    <div class="customer gray" draggable="true" id="customer4">Customer 4</div>
+    <div class="customer gray" draggable="true" id="customer5">Customer 5</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
